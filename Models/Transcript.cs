@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace webphuckhao_api.Models
+namespace NguyenHuynhNam_2015.Models
 {
     // Class representing a transcript or grade record
     public class Transcript

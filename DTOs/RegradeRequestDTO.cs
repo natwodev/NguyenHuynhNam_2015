@@ -1,7 +1,7 @@
 using System;
-using webphuckhao_api.Enums;
+using NguyenHuynhNam_2015.Enums;
 
-namespace webphuckhao_api.DTOs
+namespace NguyenHuynhNam_2015.DTOs
 {
     // DTO for Regrade Request data
     public class RegradeRequestDTO

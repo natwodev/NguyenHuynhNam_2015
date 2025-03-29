@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using webphuckhao_api.Models;
+using NguyenHuynhNam_2015.Models;
 
-namespace webphuckhao_api.Data
+namespace NguyenHuynhNam_2015.Data
 {
     // ApplicationDbContext sử dụng IdentityDbContext để hỗ trợ xác thực và phân quyền
     public class ApplicationDbContext : DbContext

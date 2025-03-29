@@ -28,16 +28,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Authentication\" />
-      <Folder Include="Configurations\" />
-      <Folder Include="Repositories\AuthService\" />
-      <Folder Include="Repositories\Interfaces\" />
-      <Folder Include="Services\AuthService\" />
-      <Folder Include="Services\Interfaces\" />
       <Folder Include="Views\Admin\" />
       <Folder Include="Views\Employee\" />
       <Folder Include="Views\Lecturer\" />
-      <Folder Include="Views\Student\" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-namespace webphuckhao_api.Enums
+namespace NguyenHuynhNam_2015.Enums
 {
     public enum RegradeStatus
     {

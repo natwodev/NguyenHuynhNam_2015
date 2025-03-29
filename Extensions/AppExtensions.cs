@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 
-namespace webphuckhao_api.Extensions
+namespace NguyenHuynhNam_2015.Extensions
 {
     public static class AppExtensions
     {
@@ -22,6 +22,10 @@ namespace webphuckhao_api.Extensions
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}")
                 .WithStaticAssets();
+            
+            // ✅ Xác thực & phân quyền
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             /*
             // Cấu hình API lắng nghe trên tất cả IP trong mạng
@@ -30,9 +34,7 @@ namespace webphuckhao_api.Extensions
             // ✅ Kiểm tra token trước khi xác thực
             app.UseMiddleware<JwtBlacklistMiddleware>();
 
-            // ✅ Xác thực & phân quyền
-            app.UseAuthentication();
-            app.UseAuthorization();
+          
             */
         }
     }

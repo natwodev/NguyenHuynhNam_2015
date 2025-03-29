@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using webphuckhao_api.Enums; // Import enum
+using NguyenHuynhNam_2015.Enums; // Import enum
 
-namespace webphuckhao_api.Models
+namespace NguyenHuynhNam_2015.Models
 {
     public class RegradeRequest
     {

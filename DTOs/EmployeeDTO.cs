@@ -1,6 +1,6 @@
 using System;
 
-namespace webphuckhao_api.DTOs
+namespace NguyenHuynhNam_2015.DTOs
 {
     // DTO for Employee data
     public class EmployeeDTO

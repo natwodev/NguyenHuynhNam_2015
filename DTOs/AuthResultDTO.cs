@@ -1,4 +1,4 @@
-namespace webphuckhao_api.DTOs;
+namespace NguyenHuynhNam_2015.DTOs;
 
 public class AuthResultDTO
 {

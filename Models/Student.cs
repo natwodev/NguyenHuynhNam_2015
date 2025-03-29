@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System;
 using System.Collections.Generic;
 
-namespace webphuckhao_api.Models
+namespace NguyenHuynhNam_2015.Models
 {
     // Lớp đại diện cho sinh viên
     public class Student

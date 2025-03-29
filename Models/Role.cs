@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace webphuckhao_api.Models;
+namespace NguyenHuynhNam_2015.Models;
 
 public class Role
 {

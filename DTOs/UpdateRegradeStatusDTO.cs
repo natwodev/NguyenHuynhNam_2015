@@ -1,7 +1,7 @@
-using webphuckhao_api.Enums;
+using NguyenHuynhNam_2015.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace webphuckhao_api.DTOs
+namespace NguyenHuynhNam_2015.DTOs
 {
     public class UpdateRegradeStatusDTO
     {

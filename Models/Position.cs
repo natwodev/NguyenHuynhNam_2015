@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 
-namespace webphuckhao_api.Models
+namespace NguyenHuynhNam_2015.Models
 {
     // Class representing a job position
     public class Position

@@ -1,4 +1,4 @@
-using webphuckhao_api.Extensions; // Import AppExtensions
+using NguyenHuynhNam_2015.Extensions; // Import AppExtensions
 
 var builder = WebApplication.CreateBuilder(args);
 

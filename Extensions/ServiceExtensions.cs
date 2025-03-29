@@ -1,11 +1,15 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
-using webphuckhao_api.Data;
-//using webphuckhao_api.Authentication;
-//using webphuckhao_api.Configurations; // Import JwtConfig
+using NguyenHuynhNam_2015.Data;
+using NguyenHuynhNam_2015.Data;
 
-namespace webphuckhao_api.Extensions
+
+using NguyenHuynhNam_2015.Authentication;
+using NguyenHuynhNam_2015.Configurations; // Import JwtConfig
+
+namespace NguyenHuynhNam_2015.Extensions
 {
     public static class ServiceExtensions
     {
@@ -16,9 +20,22 @@ namespace webphuckhao_api.Extensions
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             
 
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Auth/Login"; // Đường dẫn đến trang đăng nhập
+                    options.LogoutPath = "/Auth/Logout"; // Đường dẫn đến trang logout
+                    options.AccessDeniedPath = "/Auth/AccessDenied"; // Trang khi bị chặn quyền
+                });
+
             // Add services to the container.
             services.AddControllersWithViews();
 
+            // Đăng ký các service khác
+            services.ConfigureDependencies();
+
+            // Đăng ký xác thực JWT (được tách riêng)
+            services.ConfigureJwt(configuration);
 /*         
             // Đăng ký các service khác
             services.ConfigureDependencies();

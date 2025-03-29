@@ -1,9 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using webphuckhao_api.Enums;
+using NguyenHuynhNam_2015.Enums;
 
-namespace webphuckhao_api.Models
+namespace NguyenHuynhNam_2015.Models
 {
     // Class representing the details of a regrade process
     public class RegradeDetail

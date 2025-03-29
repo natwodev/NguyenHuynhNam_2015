@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace webphuckhao_api.Models
+namespace NguyenHuynhNam_2015.Models
 {
     // Class representing a department
     public class Department

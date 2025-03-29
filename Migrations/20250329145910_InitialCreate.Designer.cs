@@ -5,14 +5,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using webphuckhao_api.Data;
+using NguyenHuynhNam_2015.Data;
 
 #nullable disable
 
 namespace NguyenHuynhNam_2015.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250329124342_InitialCreate")]
+    [Migration("20250329145910_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -25,7 +25,7 @@ namespace NguyenHuynhNam_2015.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("webphuckhao_api.Models.AcademicYear", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.AcademicYear", b =>
                 {
                     b.Property<int>("AcademicYearId")
                         .ValueGeneratedOnAdd()
@@ -49,7 +49,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("AcademicYears");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Class", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Class", b =>
                 {
                     b.Property<string>("ClassId")
                         .HasMaxLength(10)
@@ -72,7 +72,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Classes");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Department", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Department", b =>
                 {
                     b.Property<string>("DepartmentId")
                         .HasMaxLength(10)
@@ -88,7 +88,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Departments");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.DigitalExam", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.DigitalExam", b =>
                 {
                     b.Property<int>("DigitalExamId")
                         .ValueGeneratedOnAdd()
@@ -125,7 +125,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("DigitalExams");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Employee", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Employee", b =>
                 {
                     b.Property<string>("EmployeeId")
                         .HasMaxLength(10)
@@ -182,7 +182,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.ExamSchedule", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.ExamSchedule", b =>
                 {
                     b.Property<int>("ExamScheduleId")
                         .ValueGeneratedOnAdd()
@@ -215,7 +215,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("ExamSchedules");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Lecturer", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Lecturer", b =>
                 {
                     b.Property<string>("LecturerId")
                         .HasMaxLength(10)
@@ -272,7 +272,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Lecturers");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Major", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Major", b =>
                 {
                     b.Property<string>("MajorId")
                         .HasMaxLength(10)
@@ -288,7 +288,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Majors");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Position", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Position", b =>
                 {
                     b.Property<string>("PositionId")
                         .HasMaxLength(10)
@@ -304,7 +304,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Positions");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.RegradeDetail", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.RegradeDetail", b =>
                 {
                     b.Property<int>("RegradeDetailId")
                         .ValueGeneratedOnAdd()
@@ -343,7 +343,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("RegradeDetails");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.RegradeRequest", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.RegradeRequest", b =>
                 {
                     b.Property<int>("RegradeRequestId")
                         .ValueGeneratedOnAdd()
@@ -398,7 +398,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("RegradeRequests");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Role", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -416,7 +416,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Roles");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Semester", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Semester", b =>
                 {
                     b.Property<int>("SemesterId")
                         .ValueGeneratedOnAdd()
@@ -451,7 +451,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Semesters");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Student", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Student", b =>
                 {
                     b.Property<string>("StudentId")
                         .HasMaxLength(10)
@@ -510,7 +510,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Students");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Subject", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Subject", b =>
                 {
                     b.Property<string>("SubjectId")
                         .HasMaxLength(10)
@@ -539,7 +539,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Subjects");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Transcript", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Transcript", b =>
                 {
                     b.Property<int>("TranscriptId")
                         .ValueGeneratedOnAdd()
@@ -584,7 +584,7 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Transcripts");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.User", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.User", b =>
                 {
                     b.Property<string>("UserId")
                         .HasMaxLength(10)
@@ -608,9 +608,9 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Class", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Class", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Department", "Department")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Department", "Department")
                         .WithMany("Classes")
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -619,37 +619,37 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("Department");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.DigitalExam", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.DigitalExam", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Transcript", "Transcript")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Transcript", "Transcript")
                         .WithOne("DigitalExam")
-                        .HasForeignKey("webphuckhao_api.Models.DigitalExam", "TranscriptId");
+                        .HasForeignKey("NguyenHuynhNam_2015.Models.DigitalExam", "TranscriptId");
 
                     b.Navigation("Transcript");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Employee", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Employee", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Department", null)
+                    b.HasOne("NguyenHuynhNam_2015.Models.Department", null)
                         .WithMany("Employees")
                         .HasForeignKey("DepartmentId");
 
-                    b.HasOne("webphuckhao_api.Models.Position", "Position")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Position", "Position")
                         .WithMany("Employees")
                         .HasForeignKey("PositionId");
 
                     b.Navigation("Position");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.ExamSchedule", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.ExamSchedule", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Semester", "Semester")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Semester", "Semester")
                         .WithMany("ExamSchedules")
                         .HasForeignKey("SemesterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("webphuckhao_api.Models.Subject", "Subject")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Subject", "Subject")
                         .WithMany()
                         .HasForeignKey("SubjectId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -660,9 +660,9 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("Subject");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Lecturer", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Lecturer", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Department", "Department")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Department", "Department")
                         .WithMany("Lecturers")
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -671,15 +671,15 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("Department");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.RegradeDetail", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.RegradeDetail", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Lecturer", "Lecturer")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Lecturer", "Lecturer")
                         .WithMany()
                         .HasForeignKey("LecturerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("webphuckhao_api.Models.RegradeRequest", "RegradeRequest")
+                    b.HasOne("NguyenHuynhNam_2015.Models.RegradeRequest", "RegradeRequest")
                         .WithMany()
                         .HasForeignKey("RegradeRequestId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -690,23 +690,23 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("RegradeRequest");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.RegradeRequest", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.RegradeRequest", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Employee", "ApprovingEmployee")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Employee", "ApprovingEmployee")
                         .WithMany()
                         .HasForeignKey("ApprovingEmployeeId");
 
-                    b.HasOne("webphuckhao_api.Models.Semester", "Semester")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Semester", "Semester")
                         .WithMany()
                         .HasForeignKey("SemesterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("webphuckhao_api.Models.Student", "Student")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Student", "Student")
                         .WithMany("RegradeRequests")
                         .HasForeignKey("StudentId");
 
-                    b.HasOne("webphuckhao_api.Models.Transcript", "Transcript")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Transcript", "Transcript")
                         .WithMany()
                         .HasForeignKey("TranscriptId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -721,9 +721,9 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("Transcript");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Semester", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Semester", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.AcademicYear", "AcademicYear")
+                    b.HasOne("NguyenHuynhNam_2015.Models.AcademicYear", "AcademicYear")
                         .WithMany("Semesters")
                         .HasForeignKey("AcademicYearId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -732,15 +732,15 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("AcademicYear");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Student", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Student", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Class", "Class")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Class", "Class")
                         .WithMany("Students")
                         .HasForeignKey("ClassId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("webphuckhao_api.Models.Major", "Major")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Major", "Major")
                         .WithMany("Students")
                         .HasForeignKey("MajorId");
 
@@ -749,9 +749,9 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("Major");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Subject", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Subject", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Department", "Department")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Department", "Department")
                         .WithMany("Subjects")
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -760,17 +760,17 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("Department");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Transcript", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Transcript", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Semester", "Semester")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Semester", "Semester")
                         .WithMany()
                         .HasForeignKey("SemesterId");
 
-                    b.HasOne("webphuckhao_api.Models.Student", "Student")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Student", "Student")
                         .WithMany("Transcripts")
                         .HasForeignKey("StudentId");
 
-                    b.HasOne("webphuckhao_api.Models.Subject", "Subject")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Subject", "Subject")
                         .WithMany("Transcripts")
                         .HasForeignKey("SubjectId");
 
@@ -781,9 +781,9 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("Subject");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.User", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.User", b =>
                 {
-                    b.HasOne("webphuckhao_api.Models.Role", "Role")
+                    b.HasOne("NguyenHuynhNam_2015.Models.Role", "Role")
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -792,17 +792,17 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("Role");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.AcademicYear", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.AcademicYear", b =>
                 {
                     b.Navigation("Semesters");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Class", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Class", b =>
                 {
                     b.Navigation("Students");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Department", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Department", b =>
                 {
                     b.Navigation("Classes");
 
@@ -813,34 +813,34 @@ namespace NguyenHuynhNam_2015.Migrations
                     b.Navigation("Subjects");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Major", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Major", b =>
                 {
                     b.Navigation("Students");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Position", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Position", b =>
                 {
                     b.Navigation("Employees");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Semester", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Semester", b =>
                 {
                     b.Navigation("ExamSchedules");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Student", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Student", b =>
                 {
                     b.Navigation("RegradeRequests");
 
                     b.Navigation("Transcripts");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Subject", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Subject", b =>
                 {
                     b.Navigation("Transcripts");
                 });
 
-            modelBuilder.Entity("webphuckhao_api.Models.Transcript", b =>
+            modelBuilder.Entity("NguyenHuynhNam_2015.Models.Transcript", b =>
                 {
                     b.Navigation("DigitalExam");
                 });
